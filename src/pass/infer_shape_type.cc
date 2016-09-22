@@ -136,7 +136,7 @@ NNVM_REGISTER_PASS(InferType)
 .describe("Infer the dtype of each node entries.")
 .set_body([](Graph ret) {
     return InferAttr<int>(
-        std::move(ret), 0,
+        std::move(ret), -1,
         "FInferType", "dtype_inputs", "dtype_attr_key",
         "dtype", "dtype_num_unknown_nodes",
         [](const int t) { return t == -1; });
