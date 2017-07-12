@@ -324,7 +324,7 @@ Graph PlanMemory(Graph ret) {
       min_allocated_bytes = storage_allocated_bytes;
     }
 
-    if (max_match_range == 0){
+    if (max_match_range == 0) {
       break;
     }
   }
